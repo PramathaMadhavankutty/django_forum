@@ -136,6 +136,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = ''
+
+STATIC_FILES_DIRS = (
+    os.path.join(BASE_DIR, "static"), # static directory at project level
+)
+
+
 
 SITE_ID = 4
 
@@ -149,3 +156,8 @@ AUTHENTICATION_BACKENDS = ('django.contrib.auth.backends.ModelBackend',
 SITE_URL = 'http://127.0.0.1:8000'
 PAYPAL_NOTIFY_URL = ' http://127.0.0.1/a-very-hard-to-guess-url/'
 PAYPAL_RECEIVER_EMAIL = 'pramatha.madhavankutty@yahoo.com'
+
+
+#Tinymce settings
+
+TINYMCE_JS_ROOT = os.path.join(BASE_DIR, "static", "js", "tinymce", "tinymce.min.js")
