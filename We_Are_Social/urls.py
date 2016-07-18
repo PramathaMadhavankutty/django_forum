@@ -25,7 +25,7 @@ from magazines import views as magazine_views
 
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin/', include(admin.site.urls)),
     url(r'^$',home_views.get_index, name='index'),
 # Faltpages
     url(r'^pages/',include('django.contrib.flatpages.urls')),
