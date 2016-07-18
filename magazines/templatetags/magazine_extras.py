@@ -32,6 +32,6 @@ def paypal_form_for(magazine, user):
         else:
             html = PayPalPaymentsForm(initial=paypal_dict, button_type='subscribe').render()
 
-    return html
+    return(html)
 
 register.simple_tag(paypal_form_for)
