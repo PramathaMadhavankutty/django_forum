@@ -41,12 +41,17 @@ INSTALLED_APPS = [
     'django.contrib.flatpages',
     'django_forms_bootstrap',
     'paypal.standard.ipn',
+    'debug_toolbar',
+    'tinymce',
+    'emoticons',
+    'disqus',
+    'reusable_blog',
     'home',
     'accounts',
     'paypal_store',
     'products',
     'magazines',
-    'reusable_blog',
+
 
 ]
 
