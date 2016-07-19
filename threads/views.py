@@ -47,4 +47,8 @@ def new_thread(request, subject_id):
  
     return render(request, 'forum/thread_form.html', args)
 
-
+def thread(request, thread_id):
+    thread_ = get_object_or_404(Thread, pk=thread_id)
+    args = {'thread': thread_}
+    args.update(csrf(request))
+    return render(request, 'forum/thread.html', args)
