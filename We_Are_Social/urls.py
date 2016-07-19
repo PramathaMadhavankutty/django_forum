@@ -55,6 +55,6 @@ urlpatterns = [
     url(r'^thread/(?P<thread_id>\d+)/$', forum_views.thread, name='thread'),
     url(r'^post/new/(?P<thread_id>\d+)/$', forum_views.new_post, name='new_post'),
     url(r'^post/edit/(?P<thread_id>\d+)/(?P<post_id>\d+)/$',forum_views.edit_post, name='edit_post'),
-    
+
 
 ]
