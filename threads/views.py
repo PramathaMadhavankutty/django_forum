@@ -77,7 +77,7 @@ def new_post(request, thread_id):
         'button_text':'Update Post'
     }
     args.update(csrf(request))
-    return render(request, 'post_form.html', args)
+    return render(request, 'forum/post_form.html', args)
 
 @login_required
 def edit_post(request, thread_id, post_id):
