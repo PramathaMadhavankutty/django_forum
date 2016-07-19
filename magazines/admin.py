@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Magazine
-from .models import Purchase
+from magazines.models import Magazine
+from magazines.models import Purchase
 
 # Register your models here.
 
